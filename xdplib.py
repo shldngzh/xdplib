@@ -1,5 +1,4 @@
 #!/usr/local/bin/python
-# xdzlib_beta.py
 # Python 2.7
 # Version 1.5 Beta
 # Xiaodong Zhai (xz125@duke.edu)
@@ -16,16 +15,12 @@ def locate_file( product,
                   data_frequency = '1sec', 
                   data_type = 'L2'): 
     '''
-    to locate file in Ubuntu server
+    to locate file
     
-    product:
-        contract name with expiration
-    date_start and date_end:
-        date span of data files
-    data_frequency:
-        what frequency data 
-    data_type:
-        what data file type to choose (L1, L2, olhc)
+    input 1) product: contract name with expiration
+          2) date_start and date_end: date span of data files
+          3) data_frequency: what frequency data 
+          4) data_type: what data file type to choose (L1, L2, olhc)
     
     returns  1) list of file path (type = np.array)
              2) list of file name (type = np.array)
